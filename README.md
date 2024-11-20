@@ -1,8 +1,12 @@
 npm install typescript -g
+
 npm install typescript ts-loader --D
+
 npm install webpack webpack-cli --save-dev
 
+
 npm install firebase
+
 Set-ExecutionPolicy -Scope CurrentUser unrestricted
 
 
