@@ -16,3 +16,6 @@ Set-ExecutionPolicy -Scope CurrentUser unrestricted
 
 
 https://github.com/LeiderCalvo/DCA/blob/22_persistAuth/src/screens/dashboard.ts
+
+
+https://github.com/LeiderCalvo/DCA/blob/24_storageFirebase%26Cloudinary/src/utils/firebase.ts
