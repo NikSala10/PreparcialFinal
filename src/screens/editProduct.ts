@@ -1,3 +1,5 @@
+import '../components/nav/nav'
+import '../components/edit/edit'
 class EditProduct extends HTMLElement {
         constructor()  {
             super();
@@ -11,8 +13,8 @@ class EditProduct extends HTMLElement {
         async render()  {
             if (this.shadowRoot) {
                 this.shadowRoot.innerHTML = `
-                <link rel="stylesheet" href="../src/screens/styles.css">
-                
+                <nav-commponent></nav-commponent>
+                <edit-commponent></edit-commponent>
                 `;
 
             }

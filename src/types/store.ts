@@ -1,16 +1,29 @@
 export type Observer = { render: () => void } & HTMLElement;
 
 export type AppState = {
-  something: {};
+	screen: string;
+	products: any[];
+	currentProduct: {  
+        id: string | null;
+        albumname: string;
+        author: string;
+        price: number;
+        stock: number;
+        image: string;
+    } | null;
+	
+	
+	
 };
 
-export enum SomeActions {
-  "X" = "X",
+export enum Screens {
+	'ADD' = 'ADD',
+	'EDIT' = 'EDIT',
+	'HOME' = 'HOME',
+	'MODIFICAR' = 'MODIFICAR'
 }
 
-export interface XAction {
-  action: SomeActions.X;
-  payload: Pick<AppState, "something">;
+export enum Actions {
+	'NAVIGATE' = 'NAVIGATE',
+	'GETPRODUCTS' = 'GETPRODUCTS',
 }
-
-export type Actions = XAction;
